@@ -206,7 +206,7 @@ npm run build
 
 Sanjana C K - 23202041@rmd.ac.in
 
-Project Link: 
+Project Link: https://github.com/sanjanachandrann/ChatWave---Real-Time-Chat-Application
 
 ---
 
