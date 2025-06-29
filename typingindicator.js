@@ -1,0 +1,30 @@
+import React from 'react';
+
+function TypingIndicator({ typingUsers }) {
+  if (typingUsers.length === 0) return null;
+
+  const getTypingText = () => {
+    if (typingUsers.length === 1) {
+      return `${typingUsers[0]} is typing...`;
+    } else if (typingUsers.length === 2) {
+      return `${typingUsers[0]} and ${typingUsers[1]} are typing...`;
+    } else {
+      return `${typingUsers.length} people are typing...`;
+    }
+  };
+
+  return (
+    <div className="typing-indicator">
+      <div className="typing-content">
+        <div className="typing-dots">
+          <span className="dot"></span>
+          <span className="dot"></span>
+          <span className="dot"></span>
+        </div>
+        <span className="typing-text">{getTypingText()}</span>
+      </div>
+    </div>
+  );
+}
+
+export default TypingIndicator;
